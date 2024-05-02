@@ -3,7 +3,7 @@ provider "google" {
   region      = "us-central1"
 }
 
-resource "google_compute_instance" "default" {
+resource "google_compute_instance" "var.my-instance" {
   name         = "var.my-instance"
   machine_type = "var.machine_type"
   zone         = "us-central1-a"
